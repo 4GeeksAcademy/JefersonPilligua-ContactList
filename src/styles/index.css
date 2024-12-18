@@ -1,3 +1,14 @@
-/* 
-    General Styles
-*/
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: "Dosis", serif;
+}
+
+.bi-house, .bi-person-add{
+    font-size: 1.4em;
+}
+
+.card{
+    width: 600px;
+    margin: 15px auto;
+}
