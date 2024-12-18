@@ -1,7 +1,11 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
+import { useNavigate } from "react-router-dom";
+
 
 export const EditContact = () => {
+
+    const navigate = useNavigate()
 
 
     const { actions, store } = useContext(Context);
@@ -23,11 +27,13 @@ export const EditContact = () => {
 
         actions.updateContact(contact);
         console.log(contact)
+        navigate('/')
+
     }
 
     return (
-        <div className="container">
-
+        <div className="container mt-5 contact-list p-2">
+            <h2 className="h1 text-center my-3">Edit Contact</h2>
             <form onSubmit={handleAddContact} className="row g-3 needs-validation" novalidate>
 
                 <div className="col-md-6">
@@ -49,7 +55,7 @@ export const EditContact = () => {
                 </div>
 
                 <div className="col-12">
-                    <button className="btn btn-primary" type="submit">Submit form</button>
+                    <button className="btn btn-primary" type="submit">submit</button>
                 </div>
             </form>
         </div>

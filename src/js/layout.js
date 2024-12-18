@@ -8,7 +8,7 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { EditContact } from "./views/EditContact";
-
+import background from "./../img/escritorio4.jpg"
 //create your first component
 const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -16,7 +16,12 @@ const Layout = () => {
 	const basename = process.env.BASENAME || "";
 
 	return (
-		<div>
+		<div style={{
+			backgroundImage: `url(${background})`,
+			height: '100vh',
+			backgroundAttachment: 'fixed',
+			backgroundSize: 'cover'
+		}}>
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
 					<Navbar />

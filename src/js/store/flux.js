@@ -46,8 +46,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 						//const newContact = [...contacts, respJson];
 						const newContacts = contacts.map((setContact) => {
 							if (setContact.id == contact.id) {
-								setContact = contact
+								return contact
 							}
+							return setContact
 						})
 						setStore({ contacts: newContacts })
 					})

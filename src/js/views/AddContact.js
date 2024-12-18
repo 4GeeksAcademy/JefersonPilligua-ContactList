@@ -1,7 +1,10 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
+import { useNavigate } from "react-router";
 
 export const AddContact = () => {
+
+    const navigate = useNavigate()
 
     const { actions } = useContext(Context);
 
@@ -15,7 +18,8 @@ export const AddContact = () => {
         }
 
         actions.addContact(contact);
-        console.log(contact)
+        console.log(contact);
+        navigate('/');
     }
 
     return (

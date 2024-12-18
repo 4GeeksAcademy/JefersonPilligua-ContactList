@@ -19,10 +19,10 @@ export const Home = () => {
 	return (
 		<main>
 			<div className="container mt-5">
-				<h1 className="text-center">Saved Contacts</h1>
 			</div>
 
-			<div className="container mt-5">
+			<div className="container contact-list mt-5">
+				<h1 className="text-center text-white">Saved Contacts</h1>
 				<div className="row row-cols-2">
 					{
 						store.contacts.map((item) => (

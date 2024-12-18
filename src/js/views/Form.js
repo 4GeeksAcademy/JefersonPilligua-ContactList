@@ -6,8 +6,8 @@ export const Form = () => {
 
 
 	return (
-		<div className="container mt-5">
-			<h2 className="h1 text-center">Register Contact</h2>
+		<div className="container mt-5 contact-list">
+			<h2 className="h1 text-center text-white">Register Contact</h2>
 			<AddContact />
 		</div>
 	);

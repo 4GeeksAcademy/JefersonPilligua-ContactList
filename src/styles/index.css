@@ -12,3 +12,17 @@ html, body {
     width: 600px;
     margin: 15px auto;
 }
+
+.contact-list{
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(10px);
+    color: white;
+    margin-top: 50px;
+    padding: 20px 0;
+  }
+  
+  nav{
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(10px);
+    color: white;
+}
